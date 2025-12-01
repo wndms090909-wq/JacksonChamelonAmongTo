@@ -135,7 +135,7 @@ onLogin: async (email, password) => {
     try {
       // 1 카카오 SDK 초기화
       if (!window.Kakao.isInitialized()) {
-        window.Kakao.init("b3fc478b356ae6fee151857a00679e07");
+        window.Kakao.init("40027648e49ff75e647060f26db444f4");
         console.log(" Kakao SDK 초기화 완료");
       }
 
