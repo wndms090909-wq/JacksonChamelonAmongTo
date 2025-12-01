@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./scss/About.scss";
 import data from "../data/jackson-about.json";
 import { Link, useNavigate } from "react-router-dom";
