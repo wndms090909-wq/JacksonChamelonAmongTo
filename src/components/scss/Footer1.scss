@@ -1,0 +1,121 @@
+@use '../../App.scss' as app;
+
+footer{
+  // margin-top: 120px;
+}
+
+.footer-wrap{
+  background: app.$text9;
+
+}
+.footer-inner{
+  // padding-top: 120px;
+  padding: 40px 0;
+}
+
+.inner {
+
+  .footer-top {
+    @include app.myTitle14();
+    text-align: left;
+    color:app.$text3;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    height: 162px;
+
+    .footer-left {
+      .logo {
+        width:300px;
+
+        img{
+          width:100%;
+        }
+      }
+      
+      .icon-wrap {
+        display: flex;
+        margin-top: 24px;
+        gap: 30px;
+
+        img {
+          cursor: pointer;
+        }
+      }
+
+    }
+
+    .footer-right {
+      display: flex;
+      gap: 60px;
+
+      >div{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .footer-title {
+        margin-bottom: 16px;
+        font-weight: 600;
+        color:app.$text1;
+      }
+
+      strong {
+        font-weight: 600;
+        color:app.$text1;
+      }
+
+      .customer-center {
+        .call {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom:4px;
+        }
+
+        .day {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .room-btn,
+  .online-btn {
+    display: inline-block;
+
+    width: fit-content;
+    padding: 12px 24px;
+
+    background:none;
+    color: app.$text4;
+    vertical-align: middle;
+
+    border: 1px solid app.$text4;
+    border-radius: 4px;
+
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: #575757;
+      color: #ffffff;
+    }
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+
+    .footer-menu {
+      display: flex;
+      gap: 16px;
+      text-decoration: underline;
+      margin-bottom: 12px;
+      color: app.$text4;
+      cursor: pointer;
+    }
+
+    address {
+      color: app.$text6;
+    }
+  }
+}

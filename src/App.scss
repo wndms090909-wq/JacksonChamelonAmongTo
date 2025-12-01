@@ -1,0 +1,66 @@
+//컬러
+$text1: #000;
+$text2: #1c1c1c;
+$text3: #3a3a3a;
+$text4: #575757;
+$text5: #717171;
+$text6: #8a8a8a;
+$text7: #a3a3a3;
+$text8: #d2d2d2;
+$text9: #e9e9e9;
+$text10: #fff;
+$BG: #f4f4f4;
+$point: #008180;
+$point2: #d0071b;
+
+html{
+    scroll-behavior: smooth;
+}
+
+//타이틀
+@mixin myTitle32 ($fw:500, $ta:center, $color:$text1) {
+    font-size: 32px;
+    font-weight: $fw;
+    line-height: 140%;
+    text-align: $ta;
+    color: $color;
+    letter-spacing: -0.8px
+}
+
+@mixin myTitle24 ($fw:500, $ta:center, $color:$text1) {
+    font-size: 24px;
+    font-weight: $fw;
+    line-height: 140%;
+    text-align: $ta;
+    color: $color;
+    letter-spacing: -0.6px;
+}
+
+@mixin myTitle16 ($fw:400, $ta:center, $color:$text1) {
+    font-size: 16px;
+    font-weight: $fw;
+    line-height: 140%;
+    text-align: $ta;
+    color: $color;
+     letter-spacing: -0.4px;
+
+}
+
+@mixin myTitle14 ($fw:400, $ta:center, $color:$text1) {
+    font-size: 14px;
+    font-weight: $fw;
+    line-height: 140%;
+    text-align: $ta;
+    color: $color;
+      letter-spacing: -0.35px;
+}
+
+//
+@mixin myFlex ($gap: 10px, $jc: space-between, $ai: center) {
+    display: flex;
+    gap: $gap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+

@@ -1,0 +1,43 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "axios": "^1.13.2",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "craco": "^0.0.3",
+    "daum": "^0.0.1",
+    "firebase": "^12.5.0",
+    "javascript": "^1.0.0",
+    "postcard": "^1.1.0",
+    "react-daum-postcode": "^3.2.0",
+    "react-router-dom": "^7.9.5",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.93.3",
+    "swiper": "^12.0.3",
+    "zustand": "^5.0.8"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint-plugin-react-hooks": "^7.0.1"
+  }
+}

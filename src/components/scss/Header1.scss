@@ -1,0 +1,148 @@
+@use '../../App.scss' as g;
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height, 70px);
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    transition: All 0.3s ease-in-out;
+
+    button {
+        background: none;
+        border: none;
+        outline: none;
+        appearance: none; //브라우저 기본 스타일 제거
+    }
+
+    .header-wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 70px;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+
+        img {
+            height: 22px;
+        }
+    }
+
+    .main-menu {
+        display: flex;
+        gap: 4px;
+        font-size: 1.4rem;
+
+        >li {
+
+            >a {
+                display: block;
+                padding: 0 8px;
+                line-height: 70px;
+            }
+
+            &:first-child a {
+                padding-left: 0px;
+            }
+
+            .sub-menu-depth {
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                transform: translateX(-50%) translateY(-10px);
+                width: 100%;
+                padding: 16px 0;
+
+                opacity: 0;
+                visibility: hidden;
+
+
+                >ul {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    display: flex;
+                    gap: 100px;
+
+                    line-height: 100%;
+
+                    li>a {
+                        transition: All 0.3s ease-in-out;
+                    }
+                }
+
+                .sub-sub-menu-depth {
+                    >ul {
+                        display: flex;
+                        flex-direction: column;
+                        line-height: 100%;
+
+                        font-size: 1.3rem;
+                        font-weight: 400;
+
+                        li {
+                            padding-top: 16px;
+                        }
+
+                        li>a {
+                            padding-top: 16px;
+                            color: g.$text3;
+
+                            &:hover {
+                                color: g.$text1;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            &:hover .sub-menu-depth {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+  .gnb-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    li.cart {
+        position: relative;
+
+        .cart-num {
+            position: absolute;
+            left: 12px;
+            top: 25px;
+            background: rgb(70, 69, 58);
+            color: #fff;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            font-size: 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    img {
+        height: 18px;
+    }
+}
+}
