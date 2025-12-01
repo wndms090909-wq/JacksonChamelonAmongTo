@@ -60,7 +60,7 @@ const Map = () => {
     // 처음 로드할 때: 스크립트 동적 추가
     const script = document.createElement("script");
     script.src =
-      "https://dapi.kakao.com/v2/maps/sdk.js?appkey=81d6be584cd0dd8d48c24cbae3bba076&autoload=false&libraries=services";
+      "https://dapi.kakao.com/v2/maps/sdk.js?appkey=44dca69168206d3044fb78e789fae64c&autoload=false&libraries=services";
     script.async = true;
     script.onload = () => {
       window.kakao.maps.load(initMap);
